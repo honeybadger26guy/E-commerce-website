@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Remix Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+  </head>
+  <body>
+    <Header class="navbar">
+      <div class="logo">
+        GreenMart
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="cart.html">
+          <i class="ri-shopping-cart-line"></i>
+        </a>
+      </div>
+    </Header>
+
+    <!-- Cart -->
+    <section class="cart-page">
+      <h1>Your Cart</h1>
+      <div id="cartItems">
+
+      </div>
+      <div class="cart-summary">
+        <h2 id="cartTotal">
+          Total: $0
+        </h2>
+        <a href="checkout.html">
+          <button>
+            Proceed to checkout
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>
