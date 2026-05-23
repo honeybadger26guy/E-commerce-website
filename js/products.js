@@ -35,19 +35,19 @@ if(storeProducts){
   products.forEach(product => {
     storeProducts.innerHTML += `
       <div class="product-card">
-        <img src="${product.image}" />
-        <div class="product-info">
-          <h3>${product.name}</h3>
-          <p class="price">
-            $${product.price}
-          </p>
+        <a style="color: #000;" href="product-detail.html?id=${product.id}">
+          <img src="${product.image}" />
+          <div class="product-info">
+            <h3>${product.name}</h3>
+            <p class="price">
+              $${product.price}
+            </p>
 
-          <a href="product-detail.html?id=${product.id}">
-            <button>
-              View Product
-            </button>
-          </a>
-        </div>
+            
+              
+            
+          </div>
+        </a>
       </div>
     `
   })

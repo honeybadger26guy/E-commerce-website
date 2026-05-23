@@ -7,8 +7,19 @@
 //   .replace(/\s+/g, "-")
 
 //   console.log(slug, title)
+
+const menuToggle = document.querySelector(".menu-toggle")
+const navLinks = document.querySelector(".nav-links")
+const cartCount = document.querySelector("#cartCount")
+
+if(menuToggle){
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active")
+  })
+}
+
+
 function updateCartCount() {
-  const cartCount = document.querySelector("#cartCount")
 
   const cart = JSON.parse(
     localStorage.getItem("cart")
