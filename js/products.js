@@ -1,6 +1,7 @@
 const products = [
   {
     id: 1,
+    // slug:"Toothbrush",
     name: "Bamboo Toothbrush",
     price: 4.99,
     image: "https://images.unsplash.com/photo-1589365252845-092198ba5334?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFtYm9vJTIwdG9vdGhicnVzaHxlbnwwfHwwfHx8MA%3D%3D",
