@@ -47,5 +47,6 @@ function addToCart(id){
     "cart",
     JSON.stringify(cart)
   )
-  alert("Product added to cart")
+  // alert("Product added to cart")
+  updateCartCount()
 }

@@ -48,4 +48,5 @@ function removeItem(index) {
   )
 
   displayCart()
+  updateCartCount()
 }
