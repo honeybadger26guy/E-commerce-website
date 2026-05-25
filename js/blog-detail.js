@@ -1,12 +1,12 @@
 const params = new URLSearchParams(
   window.location.search
 )
-const blogId = params.get("slug")
+const blogSlug = params.get("slug")
 
 const blogDetail = document.querySelector("#blogDetail")
 
 const singleBlog = blogs.find(
-  item => item.slug == blogId
+  item => item.slug == blogSlug
 )
 
 if(singleBlog){

@@ -1,8 +1,8 @@
 const params = new URLSearchParams(window.location.search)
-const productId = params.get("id")
+const productSlug = params.get("slug")
 const productDetail = document.querySelector("#productDetail")
 const singleProduct = products.find(
-  item => item.id == productId
+  item => item.slug == productSlug
 )
 const addToCarts = document.querySelector("#addToCarts")
 
@@ -33,6 +33,7 @@ if(singleProduct){
     </div>
   `
 } 
+
 let product;
 function addToCart(id){
   let cart = JSON.parse(

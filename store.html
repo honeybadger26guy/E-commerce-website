@@ -24,8 +24,8 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="nav-icons">
-        <i class="ri-search-line"></i>
-        <i class="ri-user-line"></i>
+        <!-- <i class="ri-search-line"></i>
+        <i class="ri-user-line"></i> -->
         <a href="cart.html" class="cart-icon">
           <i class="ri-shopping-cart-line"></i>
           <span id="cartCount">
@@ -45,14 +45,40 @@
     <h1>Our Store</h1>
     <p>Sustainable products for everyday living.</p>
     </section>
+
     <!-- Products -->
     <section class="store-products">
+      <!-- Search & Filter -->
+      <div class="store-tools">
+        <input 
+          type="text" 
+          id="searchInput"
+          placeholder="Search Products..."
+        />
+        <search id="categoryFilter">
+          <option value="all">
+            All Categories
+          </option>
+          <option value="personal-care">
+            Personal Care
+          </option>
+          <option value="fashion">
+            Fashion
+          </option>
+          <option value="accessories">
+            Accessories
+          </option>
+        </search>
+      </div>
+
+
       <div class="product-grid" id="storeProducts">
         
       </div>
     </section>
-
-    <script src="js/app.js"></script>
+    
     <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/products.js"></script> -->
   </body>
 </html>
