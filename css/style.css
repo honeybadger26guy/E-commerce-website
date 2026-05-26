@@ -461,6 +461,42 @@ a{
   margin-left: 20px;
   margin-bottom: 10px;
 }
+#darkModeToggle{
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.dark-mode{
+  background: #121212;
+  color: #fff;
+}
+.dark-mode .navbar,
+.dark-mode .product-card,
+.dark-mode .feature-card,
+.dark-mode .category-card,
+.dark-mode .blog-card,
+.dark-mode .newsletter-content,
+.dark-mode .cart-card,
+.dark-mode .hero,
+.dark-mode .active,
+.dark-mode .page-banner,
+.dark-mode .newsletter{
+  background: #1e1e1e;
+  color: #fff;
+}
+.dark-mode .nav-links a,
+.dark-mode .logo{
+  color: #fff;
+}
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select{
+  background: #1e1e1e;
+  color: #fff;
+  border: 1px solid #333;
+}
+
 
 @media ( max-width: 992px){
   .hero{
@@ -539,5 +575,10 @@ a{
   }
   .store-tools{
     flex-direction: column;
+  }
+  #categoryFilter{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
   }
 }
