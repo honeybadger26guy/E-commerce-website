@@ -48,6 +48,8 @@ function addToCart(id){
     "cart",
     JSON.stringify(cart)
   )
+  
+  showToast("Product added to cart")
   // alert("Product added to cart")
   updateCartCount()
 }

@@ -46,3 +46,12 @@ if(darkModeToogle){
     }
   })
 }
+
+function showToast(message) {
+  const toast = document.querySelector("#toast")
+  toast.innerHTML = message
+  toast.classList.add("show-toast")
+  setTimeout(() => {
+    toast.classList.remove("show-toast")
+  }, 3000)
+}

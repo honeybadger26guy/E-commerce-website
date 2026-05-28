@@ -453,11 +453,9 @@ a{
   gap: 10px;
 }
 .product-actions button{
-  width: 60px;
-  background: #fff;
-  color: #0d3b2e;
-  border: 1px solid #0d3b2e;
-  border-radius: 10px;
+  background: none;
+  font-size: 25px;
+  border: none;
   margin-left: 20px;
   margin-bottom: 10px;
 }
@@ -479,9 +477,11 @@ a{
 .dark-mode .newsletter-content,
 .dark-mode .cart-card,
 .dark-mode .hero,
+.dark-mode .cart-icon,
 .dark-mode .active,
 .dark-mode .page-banner,
-.dark-mode .newsletter{
+.dark-mode .newsletter,
+.dark-mode .checkout-page{
   background: #1e1e1e;
   color: #fff;
 }
@@ -496,7 +496,23 @@ a{
   color: #fff;
   border: 1px solid #333;
 }
+#toast{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0d3b2e;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 9999;
+}
 
+.show-toast{
+  opacity: 1 !important;
+}
 
 @media ( max-width: 992px){
   .hero{
@@ -559,7 +575,7 @@ a{
   }
   .nav-links{
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     width: 100%;
     background: #fff;

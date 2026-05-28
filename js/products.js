@@ -100,3 +100,17 @@ if(categoryFilter){
     filterProducts
   )
 }
+
+function addWishlist(id){
+  let wishlist = JSON.parse(
+    localStorage.getItem("wishlist")
+  ) || []
+  const product = products.find(
+    item => item.id == id
+  )
+  wishlist.push(product)
+  localStorage.setItem(
+    "wishlist", JSON.stringify(wishlist)
+  )
+  showToast("Added to wishlist")
+}
