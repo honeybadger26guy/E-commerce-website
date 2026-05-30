@@ -56,3 +56,26 @@ function showToast(message) {
   }, 3000)
 }
 
+const loginForm = document.querySelector("#loginForm")
+
+if(loginForm) {
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    showToast("Login successful")
+    setTimeout(() => {
+      window.location.href = "index.html"
+    }, 1500);
+  })
+}
+
+const registerForm = document.querySelector("#registerForm")
+
+if(registerForm) {
+  registerForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    showToast("Registration successful")
+    setTimeout(() => {
+      window.location.href = "login.html"
+    }, 1500);
+  })
+}

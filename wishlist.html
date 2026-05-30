@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Remix Icons -->      
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+  </head>
+  <body>
+    <Header class="navbar">
+      <div class="logo">
+        GreenMart
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+      <div class="nav-icons">
+        <button id="darkModeToggle">
+          🌙
+        </button>
+        <a href="cart.html" class="cart-icon">
+          <i class="ri-shopping-cart-line"></i>
+          <span id="cartCount">
+            0
+          </span>
+        </a>
+
+        <!-- Mobile Menu -->
+        <div class="menu-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </Header>
+    <section class="wishlist-page">
+      <h1>My Wishlist</h1>
+
+      <div class="product-grid" id="wishlistItems">
+
+      </div>
+    </section>
+    <div id="toast"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/wishlist.js"></script>    
+  </body>
+</html>
