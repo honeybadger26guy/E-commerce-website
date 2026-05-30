@@ -48,7 +48,7 @@ function moveToCart(id){
   showToast("Moved to Cart")
 }
 function removeItem(index) {
-  wishlist.splice(index, 1)
+  wishlist.splice(index)
   localStorage.setItem(
     "wishlist",
     JSON.stringify(wishlist)
